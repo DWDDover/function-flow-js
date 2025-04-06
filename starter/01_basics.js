@@ -8,8 +8,8 @@ const student = {
 
 function printStudentName() {
   // Your code here
-  console.log(student.name)
+  console.log("Student name is:", student.name)
 
 }
-printStudentName()
+
 module.exports = { printStudentName };

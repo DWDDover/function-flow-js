@@ -12,12 +12,15 @@ const ctx = canvas.getContext("2d");
 const steps = ["Start", "Process", "Decision", "Action", "End"];
 
 function drawFlowStep(step) {
-  console.log(steps[step]);
+  ctx.font = "20px Arial";
+  ctx.fillText(steps[step], 50, 100 + step * 40)
 }
 
 function animateFlow() {
-  for (let i = 0; i < steps.length; i++) {
-    drawFlowStep(i);
+  if (currentStep < steps.length) {
+    drawFlowStep(currentStep);
+    currentStep++;
+    setTimeout(animateFlow, 1000);
   }
 }
 
