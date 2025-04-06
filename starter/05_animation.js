@@ -2,7 +2,17 @@
 // TODO: Use 'console.clear()', 'console.log()', and basic logic with position
 
 function move() {
-  // Your code here
+  let a = ">======>"
+  let b = "     >======>" 
+ 
+    console.log(a);
+    console.clear();
+    console.log(b);
+    console.clear();
+
+  
 }
+
+
 
 module.exports = { move };

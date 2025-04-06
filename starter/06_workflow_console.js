@@ -10,7 +10,13 @@ const steps = [
 ];
 
 function animateSteps() {
-  // Your code here
+  for (let i = 0; i < steps.length; i++) {
+    setTimeout(() => {
+      console.log(steps[i])
+    }, i * 1000);
+    
+  
+  }
 }
 
 module.exports = { animateSteps };

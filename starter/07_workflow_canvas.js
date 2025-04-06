@@ -12,11 +12,15 @@ const ctx = canvas.getContext("2d");
 const steps = ["Start", "Process", "Decision", "Action", "End"];
 
 function drawFlowStep(step) {
-  // Your code here
+  console.log(steps[step]);
 }
 
 function animateFlow() {
-  // Your code here
+  for (let i = 0; i < steps.length; i++) {
+    drawFlowStep(i);
+  }
 }
+
+
 
 module.exports = { animateFlow };
